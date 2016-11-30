@@ -15,6 +15,8 @@
 		8B8327DB1DEDA2A1009D8BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8327D91DEDA2A1009D8BB0 /* LaunchScreen.storyboard */; };
 		8B8327E61DEDA2A1009D8BB0 /* CustomizeNSOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327E51DEDA2A1009D8BB0 /* CustomizeNSOperationTests.m */; };
 		8B8327F11DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327F01DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.m */; };
+		8B8328001DEDA2C4009D8BB0 /* MyNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327FF1DEDA2C4009D8BB0 /* MyNSOperation.m */; };
+		8B8328031DEDA2DC009D8BB0 /* DownloadPic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8328021DEDA2DC009D8BB0 /* DownloadPic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		8B8327EC1DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomizeNSOperationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8327F01DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomizeNSOperationUITests.m; sourceTree = "<group>"; };
 		8B8327F21DEDA2A1009D8BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8327FE1DEDA2C4009D8BB0 /* MyNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNSOperation.h; sourceTree = "<group>"; };
+		8B8327FF1DEDA2C4009D8BB0 /* MyNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNSOperation.m; sourceTree = "<group>"; };
+		8B8328011DEDA2DC009D8BB0 /* DownloadPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPic.h; sourceTree = "<group>"; };
+		8B8328021DEDA2DC009D8BB0 /* DownloadPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				8B8327CF1DEDA2A1009D8BB0 /* AppDelegate.m */,
 				8B8327D11DEDA2A1009D8BB0 /* ViewController.h */,
 				8B8327D21DEDA2A1009D8BB0 /* ViewController.m */,
+				8B8328011DEDA2DC009D8BB0 /* DownloadPic.h */,
+				8B8328021DEDA2DC009D8BB0 /* DownloadPic.m */,
+				8B8327FE1DEDA2C4009D8BB0 /* MyNSOperation.h */,
+				8B8327FF1DEDA2C4009D8BB0 /* MyNSOperation.m */,
 				8B8327D41DEDA2A1009D8BB0 /* Main.storyboard */,
 				8B8327D71DEDA2A1009D8BB0 /* Assets.xcassets */,
 				8B8327D91DEDA2A1009D8BB0 /* LaunchScreen.storyboard */,
@@ -277,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8327D31DEDA2A1009D8BB0 /* ViewController.m in Sources */,
+				8B8328031DEDA2DC009D8BB0 /* DownloadPic.m in Sources */,
 				8B8327D01DEDA2A1009D8BB0 /* AppDelegate.m in Sources */,
+				8B8328001DEDA2C4009D8BB0 /* MyNSOperation.m in Sources */,
 				8B8327CD1DEDA2A1009D8BB0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
