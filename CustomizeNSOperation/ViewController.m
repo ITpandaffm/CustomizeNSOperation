@@ -18,12 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    ImageDownloader *downloader = [[ImageDownloader alloc] init];
-//    [downloader downloadPic:@"https://www.baidu.com/img/bd_logo1.png"];
-//    
-    ImageCache *cacher = [[ImageCache alloc] init];
-    NSString *str2 = [cacher md5HexDigest:@"huangchuqi"];
-    NSLog(@"%s", str2.UTF8String);
+    ImageDownloader *downloader = [[ImageDownloader alloc] init];
+    [downloader downloadPic:@"https://www.baidu.com/img/bd_logo1.png"];
+    
+    ImageCache *cache = [[ImageCache alloc] init];
+    NSString *str = [cache md5:@"huangchuqi"];
+    NSLog(@"%@", str);
 }
 
 

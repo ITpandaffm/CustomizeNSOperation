@@ -23,5 +23,5 @@
 
 //这个不应该暴露在外部哒
 - (NSString *)md5HexDigest:(NSString*)input;
-
+- (NSString *)md5:(NSString *)str;
 @end
