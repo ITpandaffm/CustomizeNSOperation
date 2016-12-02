@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B8323C71DF1081A00CDD17D /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8323C61DF1081A00CDD17D /* ImageCache.m */; };
 		8B8327CD1DEDA2A1009D8BB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327CC1DEDA2A1009D8BB0 /* main.m */; };
 		8B8327D01DEDA2A1009D8BB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327CF1DEDA2A1009D8BB0 /* AppDelegate.m */; };
 		8B8327D31DEDA2A1009D8BB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327D21DEDA2A1009D8BB0 /* ViewController.m */; };
@@ -15,8 +16,8 @@
 		8B8327DB1DEDA2A1009D8BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8327D91DEDA2A1009D8BB0 /* LaunchScreen.storyboard */; };
 		8B8327E61DEDA2A1009D8BB0 /* CustomizeNSOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327E51DEDA2A1009D8BB0 /* CustomizeNSOperationTests.m */; };
 		8B8327F11DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327F01DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.m */; };
-		8B8328001DEDA2C4009D8BB0 /* MyNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327FF1DEDA2C4009D8BB0 /* MyNSOperation.m */; };
-		8B8328031DEDA2DC009D8BB0 /* DownloadPic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8328021DEDA2DC009D8BB0 /* DownloadPic.m */; };
+		8B8328001DEDA2C4009D8BB0 /* ImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8327FF1DEDA2C4009D8BB0 /* ImageDownloadOperation.m */; };
+		8B8328031DEDA2DC009D8BB0 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8328021DEDA2DC009D8BB0 /* ImageDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B8323C31DF0FB6C00CDD17D /* ImageDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadDelegate.h; sourceTree = "<group>"; };
+		8B8323C51DF1081A00CDD17D /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		8B8323C61DF1081A00CDD17D /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
 		8B8327C81DEDA2A1009D8BB0 /* CustomizeNSOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizeNSOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8327CC1DEDA2A1009D8BB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B8327CE1DEDA2A1009D8BB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,10 +57,10 @@
 		8B8327EC1DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomizeNSOperationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8327F01DEDA2A1009D8BB0 /* CustomizeNSOperationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomizeNSOperationUITests.m; sourceTree = "<group>"; };
 		8B8327F21DEDA2A1009D8BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B8327FE1DEDA2C4009D8BB0 /* MyNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNSOperation.h; sourceTree = "<group>"; };
-		8B8327FF1DEDA2C4009D8BB0 /* MyNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNSOperation.m; sourceTree = "<group>"; };
-		8B8328011DEDA2DC009D8BB0 /* DownloadPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPic.h; sourceTree = "<group>"; };
-		8B8328021DEDA2DC009D8BB0 /* DownloadPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPic.m; sourceTree = "<group>"; };
+		8B8327FE1DEDA2C4009D8BB0 /* ImageDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadOperation.h; sourceTree = "<group>"; };
+		8B8327FF1DEDA2C4009D8BB0 /* ImageDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadOperation.m; sourceTree = "<group>"; };
+		8B8328011DEDA2DC009D8BB0 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		8B8328021DEDA2DC009D8BB0 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B503EBB1DEFADA300D7F355 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				8B8328011DEDA2DC009D8BB0 /* ImageDownloader.h */,
+				8B8328021DEDA2DC009D8BB0 /* ImageDownloader.m */,
+				8B503EBC1DEFADAE00D7F355 /* Resource */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
+		8B503EBC1DEFADAE00D7F355 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8B8323C31DF0FB6C00CDD17D /* ImageDownloadDelegate.h */,
+				8B8323C51DF1081A00CDD17D /* ImageCache.h */,
+				8B8323C61DF1081A00CDD17D /* ImageCache.m */,
+				8B8327FE1DEDA2C4009D8BB0 /* ImageDownloadOperation.h */,
+				8B8327FF1DEDA2C4009D8BB0 /* ImageDownloadOperation.m */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		8B8327BF1DEDA2A1009D8BB0 = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +137,7 @@
 				8B8327CF1DEDA2A1009D8BB0 /* AppDelegate.m */,
 				8B8327D11DEDA2A1009D8BB0 /* ViewController.h */,
 				8B8327D21DEDA2A1009D8BB0 /* ViewController.m */,
-				8B8328011DEDA2DC009D8BB0 /* DownloadPic.h */,
-				8B8328021DEDA2DC009D8BB0 /* DownloadPic.m */,
-				8B8327FE1DEDA2C4009D8BB0 /* MyNSOperation.h */,
-				8B8327FF1DEDA2C4009D8BB0 /* MyNSOperation.m */,
+				8B503EBB1DEFADA300D7F355 /* Download */,
 				8B8327D41DEDA2A1009D8BB0 /* Main.storyboard */,
 				8B8327D71DEDA2A1009D8BB0 /* Assets.xcassets */,
 				8B8327D91DEDA2A1009D8BB0 /* LaunchScreen.storyboard */,
@@ -287,9 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8327D31DEDA2A1009D8BB0 /* ViewController.m in Sources */,
-				8B8328031DEDA2DC009D8BB0 /* DownloadPic.m in Sources */,
+				8B8328031DEDA2DC009D8BB0 /* ImageDownloader.m in Sources */,
 				8B8327D01DEDA2A1009D8BB0 /* AppDelegate.m in Sources */,
-				8B8328001DEDA2C4009D8BB0 /* MyNSOperation.m in Sources */,
+				8B8328001DEDA2C4009D8BB0 /* ImageDownloadOperation.m in Sources */,
+				8B8323C71DF1081A00CDD17D /* ImageCache.m in Sources */,
 				8B8327CD1DEDA2A1009D8BB0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +552,7 @@
 				8B8327F71DEDA2A1009D8BB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B8327F81DEDA2A1009D8BB0 /* Build configuration list for PBXNativeTarget "CustomizeNSOperationTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +561,7 @@
 				8B8327FA1DEDA2A1009D8BB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B8327FB1DEDA2A1009D8BB0 /* Build configuration list for PBXNativeTarget "CustomizeNSOperationUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +570,7 @@
 				8B8327FD1DEDA2A1009D8BB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

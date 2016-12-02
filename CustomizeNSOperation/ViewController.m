@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ImageDownloader.h"
+#import "ImageCache.h"
 
 @interface ViewController ()
 
@@ -16,14 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+//    ImageDownloader *downloader = [[ImageDownloader alloc] init];
+//    [downloader downloadPic:@"https://www.baidu.com/img/bd_logo1.png"];
+//    
+    ImageCache *cacher = [[ImageCache alloc] init];
+    NSString *str2 = [cacher md5HexDigest:@"huangchuqi"];
+    NSLog(@"%s", str2.UTF8String);
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end
