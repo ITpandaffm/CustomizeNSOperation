@@ -102,6 +102,12 @@ static ImageDownloader *_instance = nil;
     return [ImageDownloader sharedInstance] ;
 }
 
+#pragma mark 设置最大并发数
+- (void)setMaxConcurrentCount:(int)maxNum
+{
+    self.queue.maxConcurrentOperationCount = maxNum;
+}
+
 #pragma mark 懒加载
 
 - (NSOperationQueue *)queue

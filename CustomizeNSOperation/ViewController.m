@@ -43,6 +43,8 @@
     ImageDownloader *downloader = [[ImageDownloader alloc] init];
 //    ImageDownloader *downloader = [ImageDownloader sharedInstance];
     downloader.delegate = self;
+    [downloader setMaxConcurrentCount:2];
+    
 //    [downloader downloadPic:@"https://www.baidu.com/img/bd_logo1.png"];
     [downloader downloadPics:@[@"https://www.baidu.com/img/bd_logo1.png",@"http://j.jikexueyuan.com/Current/home/offline/web/build/static/image/title.png",@"http://img05.tooopen.com/images/20140604/sy_62331342149.jpg"]];
 }
