@@ -8,19 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ImageDownloadDelegate.h"
+#import "ImageLoadDelegate.h"
 
-
+typedef void (^DownloadCompleteBlock)(UIImage *);
 
 @interface ImageDownloadOperation : NSOperation
 
-
-@property (nonatomic, weak) id <ImageDownloadDelegate>delegate;
+@property (nonatomic, copy) DownloadCompleteBlock downloadCompleteBlock;
 @property (nonatomic, copy) NSString *strURL;
 
 - (instancetype)initWithURL:(NSString *)strURL;
-
-
 
 @end
 

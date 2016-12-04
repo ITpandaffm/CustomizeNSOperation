@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B8323C31DF0FB6C00CDD17D /* ImageDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadDelegate.h; sourceTree = "<group>"; };
 		8B8323C51DF1081A00CDD17D /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
 		8B8323C61DF1081A00CDD17D /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
 		8B8323CB1DF3B9AD00CDD17D /* ImageLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoadDelegate.h; sourceTree = "<group>"; };
@@ -103,7 +102,6 @@
 		8B503EBC1DEFADAE00D7F355 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				8B8323C31DF0FB6C00CDD17D /* ImageDownloadDelegate.h */,
 				8B8323C51DF1081A00CDD17D /* ImageCache.h */,
 				8B8323C61DF1081A00CDD17D /* ImageCache.m */,
 				8B8327FE1DEDA2C4009D8BB0 /* ImageDownloadOperation.h */,

@@ -24,24 +24,19 @@
 {
     NSURL *url = [NSURL URLWithString:self.strURL];
     NSData *data = [NSData dataWithContentsOfURL:url];
-//    NSLog(@"%@", [NSThread currentThread]);
-    if (data) {
-        if ([self.delegate respondsToSelector:@selector(operation:didDownloadImageFinish:)]) {
-            UIImage *image = [UIImage imageWithData:data];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.delegate operation:self didDownloadImageFinish:image];
-            });
-            /*
-             放入内存
-             */
-            /*
-             写入文件
-             */
-        } else {
-            NSLog(@"没有实现operation:didDownloadImageFinish:方法噢");
+    if (data)
+    {
+        UIImage *image = [UIImage imageWithData:data];
+        if (self.downloadCompleteBlock)
+        {
+            self.downloadCompleteBlock(image);
+        } else
+        {
+            NSLog(@"没有实现block方法噢");
         }
-    } else {
-        NSLog(@"下载图片失败了噢，快去看看是咋回事");
+    } else
+    {
+        NSLog(@"下载图片失败了噢，看看是不是网络环境不好？");
     }
 }
 

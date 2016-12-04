@@ -13,14 +13,12 @@
 
 //检查图片是否存在
 - (BOOL)imageIsExistInRAM:(NSString *)strURL;
-//- (BOOL)imageIsExistInDisk:(NSString *)strURL;
+- (BOOL)imageIsExistInDisk:(NSString *)strURL;
 //获取图片
 - (UIImage *)imageLoadFromRAM:(NSString *)strURL;
-//- (UIImage *)imageLoadFromDIsk:(NSString *)strURL;
+- (UIImage *)imageLoadFromDIsk:(NSString *)strURL;
 ////存储图片
 - (BOOL)saveImageToRAM:(UIImage *)image withImageURL:(NSString *)strURL;
-//- (BOOL)saveImageToDisk:(UIImage *)image withImageURL:(NSString *)strURL;
+- (BOOL)saveImageToDisk:(UIImage *)image withImageURL:(NSString *)strURL;
 
-//这个不应该暴露在外部哒
-- (NSString *)md5:(NSString *)str;
 @end
