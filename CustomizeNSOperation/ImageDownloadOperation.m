@@ -28,7 +28,9 @@
     if (data) {
         if ([self.delegate respondsToSelector:@selector(operation:didDownloadImageFinish:)]) {
             UIImage *image = [UIImage imageWithData:data];
-            [self.delegate operation:self didDownloadImageFinish:image];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.delegate operation:self didDownloadImageFinish:image];
+            });
             /*
              放入内存
              */

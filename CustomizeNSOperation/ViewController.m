@@ -8,9 +8,8 @@
 
 #import "ViewController.h"
 #import "ImageDownloader.h"
-#import "ImageCache.h"
-
-@interface ViewController ()
+#import "ImageDownloadDelegate.h"
+@interface ViewController () 
 
 @end
 
@@ -20,10 +19,13 @@
     [super viewDidLoad];
     ImageDownloader *downloader = [[ImageDownloader alloc] init];
     [downloader downloadPic:@"https://www.baidu.com/img/bd_logo1.png"];
+
+}
+
+#pragma mark ImageDownloadDelegate
+- (void)operation:(ImageDownloadOperation *)operation didDownloadImageFinish:(UIImage *)image
+{
     
-    ImageCache *cache = [[ImageCache alloc] init];
-    NSString *str = [cache md5:@"huangchuqi"];
-    NSLog(@"%@", str);
 }
 
 

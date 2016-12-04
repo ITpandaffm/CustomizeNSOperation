@@ -41,6 +41,7 @@
 		8B8323C31DF0FB6C00CDD17D /* ImageDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadDelegate.h; sourceTree = "<group>"; };
 		8B8323C51DF1081A00CDD17D /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
 		8B8323C61DF1081A00CDD17D /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		8B8323CB1DF3B9AD00CDD17D /* ImageLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoadDelegate.h; sourceTree = "<group>"; };
 		8B8327C81DEDA2A1009D8BB0 /* CustomizeNSOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizeNSOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8327CC1DEDA2A1009D8BB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B8327CE1DEDA2A1009D8BB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 		8B503EBB1DEFADA300D7F355 /* Download */ = {
 			isa = PBXGroup;
 			children = (
+				8B8323CB1DF3B9AD00CDD17D /* ImageLoadDelegate.h */,
 				8B8328011DEDA2DC009D8BB0 /* ImageDownloader.h */,
 				8B8328021DEDA2DC009D8BB0 /* ImageDownloader.m */,
 				8B503EBC1DEFADAE00D7F355 /* Resource */,
